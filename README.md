@@ -11,11 +11,11 @@ npm install rn-stylish-progress-bar
 ## Usage
 
 ```js
-import { multiply } from "rn-stylish-progress-bar";
+import StylishProgressBar from 'rn-stylish-progress-bar';
 
 // ...
 
-const result = await multiply(3, 7);
+<StylishProgressBar min={min} max={10} />;
 ```
 
 ## Contributing

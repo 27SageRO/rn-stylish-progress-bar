@@ -1,18 +1,17 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-stylish-progress-bar';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import StylishProgressBar from 'rn-stylish-progress-bar';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const [min, setMin] = useState(0);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <TouchableOpacity onPress={() => setMin(Math.floor(Math.random() * 11))}>
+        <Text>Trigger</Text>
+      </TouchableOpacity>
+      <StylishProgressBar min={min} max={10} />
     </View>
   );
 }
@@ -20,8 +19,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    margin: 32,
   },
   box: {
     width: 60,

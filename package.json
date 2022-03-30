@@ -106,6 +106,15 @@
       "@react-native-community",
       "prettier"
     ],
+    "overrides": [
+      {
+        "files": ["*.ts", "*.tsx"],
+        "rules": {
+          "react-native/no-inline-styles": 0,
+          "react-hooks/exhaustive-deps": 0
+        }
+      }
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -114,7 +123,8 @@
           "singleQuote": true,
           "tabWidth": 2,
           "trailingComma": "es5",
-          "useTabs": false
+          "useTabs": false,
+          "endOfLine": "auto"
         }
       ]
     }
