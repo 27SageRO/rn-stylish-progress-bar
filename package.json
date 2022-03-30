@@ -1,6 +1,6 @@
 {
   "name": "rn-stylish-progress-bar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stylish progress bar for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -108,7 +108,10 @@
     ],
     "overrides": [
       {
-        "files": ["*.ts", "*.tsx"],
+        "files": [
+          "*.ts",
+          "*.tsx"
+        ],
         "rules": {
           "react-native/no-inline-styles": 0,
           "react-hooks/exhaustive-deps": 0
