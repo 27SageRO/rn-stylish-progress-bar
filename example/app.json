@@ -1,0 +1,22 @@
+{
+  "name": "rn-stylish-progress-bar-example",
+  "displayName": "RnStylishProgressBar Example",
+  "expo": {
+    "name": "rn-stylish-progress-bar-example",
+    "slug": "rn-stylish-progress-bar-example",
+    "description": "Example app for rn-stylish-progress-bar",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
